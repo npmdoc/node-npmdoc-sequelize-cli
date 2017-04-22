@@ -1,0 +1,2911 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/sequelize/cli"
+
+    >sequelize-cli (v2.7.0)</a>
+</h1>
+<h4>The Sequelize CLI</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli">module sequelize-cli</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>config_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>generic_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>gulp_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>init_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>model_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>path_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>template_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>umzug_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>version_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sequelize-cli.</span>view_helper</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.config_helper">module sequelize-cli.config_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.configFileExists">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>configFileExists
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.filteredUrl">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>filteredUrl
+            <span class="apidocSignatureSpan">(url, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.getConfigFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>getConfigFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.getDefaultConfig">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>getDefaultConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.init">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.parseDbUrl">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>parseDbUrl
+            <span class="apidocSignatureSpan">(urlString)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.readConfig">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>readConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.relativeConfigFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>relativeConfigFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.supportsCoffee">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>supportsCoffee
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.urlStringToConfigHash">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>urlStringToConfigHash
+            <span class="apidocSignatureSpan">(urlString)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.config_helper.writeDefaultConfig">
+            function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>writeDefaultConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.generic_helper">module sequelize-cli.generic_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.generic_helper.execQuery">
+            function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>execQuery
+            <span class="apidocSignatureSpan">(sequelize, sql, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.generic_helper.getEnvironment">
+            function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>getEnvironment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.generic_helper.getSequelize">
+            function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>getSequelize
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.generic_helper.mkdirp">
+            function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>mkdirp
+            <span class="apidocSignatureSpan">(path, root)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.gulp_helper">module sequelize-cli.gulp_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.gulp_helper.addHelp">
+            function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>addHelp
+            <span class="apidocSignatureSpan">(gulp, taskName, task)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.gulp_helper.addTask">
+            function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>addTask
+            <span class="apidocSignatureSpan">(gulp, taskName, task)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.gulp_helper.getGlobalOptions">
+            function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>getGlobalOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.gulp_helper.printManuals">
+            function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>printManuals
+            <span class="apidocSignatureSpan">(tasks)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.init_helper">module sequelize-cli.init_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.createFolder">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createFolder
+            <span class="apidocSignatureSpan">(folderName, folder, force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.createMigrationsFolder">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createMigrationsFolder
+            <span class="apidocSignatureSpan">(force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.createModelsFolder">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createModelsFolder
+            <span class="apidocSignatureSpan">(force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.createModelsIndexFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createModelsIndexFile
+            <span class="apidocSignatureSpan">(force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.createSeedersFolder">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createSeedersFolder
+            <span class="apidocSignatureSpan">(force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.init_helper.notifyAboutExistingFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>notifyAboutExistingFile
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.model_helper">module sequelize-cli.model_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.model_helper.generateFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>generateFile
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.model_helper.generateFileContent">
+            function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>generateFileContent
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.model_helper.modelFileExists">
+            function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>modelFileExists
+            <span class="apidocSignatureSpan">(filePath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.model_helper.notifyAboutExistingFile">
+            function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>notifyAboutExistingFile
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.model_helper.transformAttributes">
+            function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>transformAttributes
+            <span class="apidocSignatureSpan">(flag)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.path_helper">module sequelize-cli.path_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.addFileExtension">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>addFileExtension
+            <span class="apidocSignatureSpan">(basename, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.existsSync">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>existsSync
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getFileExtension">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getFileExtension
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getFileName">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getFileName
+            <span class="apidocSignatureSpan">(type, name, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getMigrationPath">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getMigrationPath
+            <span class="apidocSignatureSpan">(migrationName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getModelPath">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getModelPath
+            <span class="apidocSignatureSpan">(modelName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getModelsPath">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getModelsPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getPath">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getPath
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.getSeederPath">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getSeederPath
+            <span class="apidocSignatureSpan">(seederName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.path_helper.resolve">
+            function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>resolve
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.template_helper">module sequelize-cli.template_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.template_helper.getCoffeeConverter">
+            function <span class="apidocSignatureSpan">sequelize-cli.template_helper.</span>getCoffeeConverter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.template_helper.render">
+            function <span class="apidocSignatureSpan">sequelize-cli.template_helper.</span>render
+            <span class="apidocSignatureSpan">(path, locals, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.umzug_helper">module sequelize-cli.umzug_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.umzug_helper.getStorage">
+            function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorage
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.umzug_helper.getStorageOption">
+            function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorageOption
+            <span class="apidocSignatureSpan">(property, fallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.umzug_helper.getStorageOptions">
+            function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorageOptions
+            <span class="apidocSignatureSpan">(type, extraOptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.umzug_helper.getStoragePath">
+            function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStoragePath
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.umzug_helper.getTableName">
+            function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getTableName
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.version_helper">module sequelize-cli.version_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getCliVersion">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getCliVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getDialect">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getDialectName">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialectName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getDialectVersion">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialectVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getNodeVersion">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getNodeVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.version_helper.getOrmVersion">
+            function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getOrmVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-cli.view_helper">module sequelize-cli.view_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.view_helper.error">
+            function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>error
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.view_helper.log">
+            function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>log
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.view_helper.pad">
+            function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>pad
+            <span class="apidocSignatureSpan">(s, smth)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-cli.view_helper.teaser">
+            function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>teaser
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli" id="apidoc.module.sequelize-cli">module sequelize-cli</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.config_helper" id="apidoc.module.sequelize-cli.config_helper">module sequelize-cli.config_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.configFileExists" id="apidoc.element.sequelize-cli.config_helper.configFileExists">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>configFileExists
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configFileExists = function () {
+  return helpers.path.existsSync(api.getConfigFile());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  &#x27;init:config&#x27;: {
+descriptions: {
+  &#x27;short&#x27;: &#x27;Initializes the configuration.&#x27;
+},
+
+task: function () {
+  if (!helpers.config.<span class="apidocCodeKeywordSpan">configFileExists</span>() || !!args.force) {
+    helpers.config.writeDefaultConfig();
+    console.log(&#x27;Created &#x22;&#x27; + helpers.config.relativeConfigFile() + &#x27;&#x22;&#x27;);
+  } else {
+    helpers.init.notifyAboutExistingFile(helpers.config.relativeConfigFile());
+    process.exit(1);
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.filteredUrl" id="apidoc.element.sequelize-cli.config_helper.filteredUrl">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>filteredUrl
+        <span class="apidocSignatureSpan">(url, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filteredUrl = function (url, config) {
+  var regExp = new RegExp(&#x27;:?&#x27; + (config.password || &#x27;&#x27;) + &#x27;@&#x27;);
+
+  return url.replace(regExp, &#x27;:*****@&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  throw new Error(
+    &#x27;Config must be an object or a promise for an object: &#x27; +
+      api.relativeConfigFile()
+  );
+}
+
+if (args.url) {
+  console.log(&#x27;Parsed url &#x27; + api.<span class="apidocCodeKeywordSpan">filteredUrl</span>(args.url, api.rawConfig));
+} else {
+  console.log(&#x27;Loaded configuration file &#x22;&#x27; + api.relativeConfigFile() + &#x27;&#x22;.&#x27;);
+}
+
+if (api.rawConfig[env]) {
+  console.log(&#x27;Using environment &#x22;&#x27; + env + &#x27;&#x22;.&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.getConfigFile" id="apidoc.element.sequelize-cli.config_helper.getConfigFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>getConfigFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getConfigFile = function () {
+  if (args.config) {
+    return path.resolve(process.cwd(), args.config);
+  }
+
+  var defaultPath = path.resolve(process.cwd(), &#x27;config&#x27;, &#x27;config.json&#x27;);
+  var alternativePath = defaultPath.replace(&#x27;.json&#x27;, &#x27;.js&#x27;);
+
+  return helpers.path.existsSync(alternativePath) ? alternativePath : defaultPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.then(function () {
+  var config;
+
+  if (args.url) {
+    config = api.parseDbUrl(args.url);
+  } else {
+    try {
+      config = require(api.<span class="apidocCodeKeywordSpan">getConfigFile</span>());
+    } catch (e) {
+      api.error = e;
+    }
+  }
+  return config;
+})
+.then(function (config) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.getDefaultConfig" id="apidoc.element.sequelize-cli.config_helper.getDefaultConfig">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>getDefaultConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDefaultConfig = function () {
+  return JSON.stringify({
+    development: {
+      username: &#x27;root&#x27;,
+      password: null,
+      database: &#x27;database_development&#x27;,
+      host: &#x27;127.0.0.1&#x27;,
+      dialect: &#x27;mysql&#x27;
+    },
+    test: {
+      username: &#x27;root&#x27;,
+      password: null,
+      database: &#x27;database_test&#x27;,
+      host: &#x27;127.0.0.1&#x27;,
+      dialect: &#x27;mysql&#x27;
+    },
+    production: {
+      username: &#x27;root&#x27;,
+      password: null,
+      database: &#x27;database_production&#x27;,
+      host: &#x27;127.0.0.1&#x27;,
+      dialect: &#x27;mysql&#x27;
+    }
+  }, undefined, 2) + &#x27;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  writeDefaultConfig: function () {
+    var configPath = path.dirname(api.getConfigFile());
+
+    if (!helpers.path.existsSync(configPath)) {
+fs.mkdirSync(configPath);
+    }
+
+    fs.writeFileSync(api.getConfigFile(), api.<span class="apidocCodeKeywordSpan">getDefaultConfig</span>());
+  },
+
+  readConfig: function () {
+    if (!api.config) {
+var env = helpers.generic.getEnvironment();
+
+if (api.rawConfig === undefined) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.init" id="apidoc.element.sequelize-cli.config_helper.init">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  return Bluebird.resolve()
+    .then(function () {
+      var config;
+
+      if (args.url) {
+        config = api.parseDbUrl(args.url);
+      } else {
+        try {
+          config = require(api.getConfigFile());
+        } catch (e) {
+          api.error = e;
+        }
+      }
+      return config;
+    })
+    .then(function (config) {
+      if (typeof config === &#x27;object&#x27; || config === undefined) {
+        return config;
+      } else if (config.length === 1) {
+        return Bluebird.promisify(config)();
+      } else {
+        return config();
+      }
+    })
+    .then(function (config) {
+      api.rawConfig = config;
+    })
+    .then(function () {
+      // Always return the full config api
+      return api;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+&#x27;use strict&#x27;;
+
+var helpers = require(__dirname);
+var _       = require(&#x27;lodash&#x27;);
+var clc     = require(&#x27;cli-color&#x27;);
+
+var config = helpers.config.<span class="apidocCodeKeywordSpan">init</span>();
+
+module.exports = {
+addTask: function (gulp, taskName, task) {
+  gulp.task(
+    taskName,
+    task.descriptions.short,
+    task.dependencies || [],
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.parseDbUrl" id="apidoc.element.sequelize-cli.config_helper.parseDbUrl">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>parseDbUrl
+        <span class="apidocSignatureSpan">(urlString)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseDbUrl = function (urlString) {
+  var config = api.urlStringToConfigHash(urlString);
+
+  config = _.assign(config, {
+    dialect: config.dialect.replace(/:$/, &#x27;&#x27;)
+  });
+
+  if (config.dialect === &#x27;sqlite&#x27;) {
+    config = _.assign(config, {
+      storage: &#x27;/&#x27; + config.database
+    });
+  }
+
+  return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  error: undefined,
+  init: function () {
+    return Bluebird.resolve()
+      .then(function () {
+var config;
+
+if (args.url) {
+  config = api.<span class="apidocCodeKeywordSpan">parseDbUrl</span>(args.url);
+} else {
+  try {
+    config = require(api.getConfigFile());
+  } catch (e) {
+    api.error = e;
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.readConfig" id="apidoc.element.sequelize-cli.config_helper.readConfig">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>readConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readConfig = function () {
+  if (!api.config) {
+    var env = helpers.generic.getEnvironment();
+
+    if (api.rawConfig === undefined) {
+      throw new Error(
+        &#x27;Error reading &#x22;&#x27; +
+          api.relativeConfigFile() +
+          &#x27;&#x22;. Error: &#x27; + api.error
+      );
+    }
+
+    if (typeof api.rawConfig !== &#x27;object&#x27;) {
+      throw new Error(
+        &#x27;Config must be an object or a promise for an object: &#x27; +
+          api.relativeConfigFile()
+      );
+    }
+
+    if (args.url) {
+      console.log(&#x27;Parsed url &#x27; + api.filteredUrl(args.url, api.rawConfig));
+    } else {
+      console.log(&#x27;Loaded configuration file &#x22;&#x27; + api.relativeConfigFile() + &#x27;&#x22;.&#x27;);
+    }
+
+    if (api.rawConfig[env]) {
+      console.log(&#x27;Using environment &#x22;&#x27; + env + &#x27;&#x22;.&#x27;);
+
+      // The Sequelize library needs a function passed in to its logging option
+      if (api.rawConfig.logging &#x26;&#x26; !_.isFunction(api.rawConfig.logging)) {
+        api.rawConfig.logging = console.log;
+      }
+
+      api.rawConfig = api.rawConfig[env];
+    }
+
+    // in case url is present - we overwrite the configuration
+    if (api.rawConfig.url) {
+      api.rawConfig = _.merge(api.rawConfig, api.parseDbUrl(api.rawConfig.url));
+    }
+
+    api.config = api.rawConfig;
+  }
+  return api.config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var config = null;
+
+options = _.assign({
+  ignoreConfig: true
+}, options || {});
+
+try {
+  config = api.<span class="apidocCodeKeywordSpan">readConfig</span>();
+} catch (e) {
+  if (options.ignoreConfig) {
+    config = {};
+  } else {
+    throw e;
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.relativeConfigFile" id="apidoc.element.sequelize-cli.config_helper.relativeConfigFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>relativeConfigFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">relativeConfigFile = function () {
+  return path.relative(process.cwd(), api.getConfigFile());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  readConfig: function () {
+    if (!api.config) {
+var env = helpers.generic.getEnvironment();
+
+if (api.rawConfig === undefined) {
+  throw new Error(
+    &#x27;Error reading &#x22;&#x27; +
+      api.<span class="apidocCodeKeywordSpan">relativeConfigFile</span>() +
+      &#x27;&#x22;. Error: &#x27; + api.error
+  );
+}
+
+if (typeof api.rawConfig !== &#x27;object&#x27;) {
+  throw new Error(
+    &#x27;Config must be an object or a promise for an object: &#x27; +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.supportsCoffee" id="apidoc.element.sequelize-cli.config_helper.supportsCoffee">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>supportsCoffee
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">supportsCoffee = function (options) {
+  var config = null;
+
+  options = _.assign({
+    ignoreConfig: true
+  }, options || {});
+
+  try {
+    config = api.readConfig();
+  } catch (e) {
+    if (options.ignoreConfig) {
+      config = {};
+    } else {
+      throw e;
+    }
+  }
+
+  return args.coffee || config.coffee;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      !!name ? name : &#x27;unnamed-&#x27; + type
+    ].join(&#x27;-&#x27;),
+    options
+  );
+},
+
+getFileExtension: function (options) {
+  return helpers.config.<span class="apidocCodeKeywordSpan">supportsCoffee</span>(options) ? &#x27;coffee&#x27; : &#x27;js&#x27;;
+},
+
+addFileExtension: function (basename, options) {
+  return [basename, this.getFileExtension(options)].join(&#x27;.&#x27;);
+},
+
+getMigrationPath: function (migrationName) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.urlStringToConfigHash" id="apidoc.element.sequelize-cli.config_helper.urlStringToConfigHash">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>urlStringToConfigHash
+        <span class="apidocSignatureSpan">(urlString)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">urlStringToConfigHash = function (urlString) {
+  try {
+    var urlParts = url.parse(urlString);
+    var result   = {
+      database: urlParts.path.replace(/^\//,  &#x27;&#x27;),
+      dialect:  urlParts.protocol,
+      host:     urlParts.hostname,
+      port:     urlParts.port
+    };
+
+    if (urlParts.auth) {
+      result = _.assign(result, {
+        username: urlParts.auth.split(&#x27;:&#x27;)[0],
+        password: urlParts.auth.split(&#x27;:&#x27;)[1]
+      });
+    }
+
+    return result;
+  } catch (e) {
+    throw new Error(&#x27;Error parsing url: &#x27; + urlString);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return result;
+} catch (e) {
+  throw new Error(&#x27;Error parsing url: &#x27; + urlString);
+}
+  },
+
+  parseDbUrl: function (urlString) {
+var config = api.<span class="apidocCodeKeywordSpan">urlStringToConfigHash</span>(urlString);
+
+config = _.assign(config, {
+  dialect: config.dialect.replace(/:$/, &#x27;&#x27;)
+});
+
+if (config.dialect === &#x27;sqlite&#x27;) {
+  config = _.assign(config, {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.config_helper.writeDefaultConfig" id="apidoc.element.sequelize-cli.config_helper.writeDefaultConfig">
+        function <span class="apidocSignatureSpan">sequelize-cli.config_helper.</span>writeDefaultConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeDefaultConfig = function () {
+  var configPath = path.dirname(api.getConfigFile());
+
+  if (!helpers.path.existsSync(configPath)) {
+    fs.mkdirSync(configPath);
+  }
+
+  fs.writeFileSync(api.getConfigFile(), api.getDefaultConfig());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x27;init:config&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the configuration.&#x27;
+  },
+
+  task: function () {
+    if (!helpers.config.configFileExists() || !!args.force) {
+      helpers.config.<span class="apidocCodeKeywordSpan">writeDefaultConfig</span>();
+      console.log(&#x27;Created &#x22;&#x27; + helpers.config.relativeConfigFile() + &#x27;&#x22;&#x27;);
+    } else {
+      helpers.init.notifyAboutExistingFile(helpers.config.relativeConfigFile());
+      process.exit(1);
+    }
+  }
+},
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.generic_helper" id="apidoc.module.sequelize-cli.generic_helper">module sequelize-cli.generic_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.generic_helper.execQuery" id="apidoc.element.sequelize-cli.generic_helper.execQuery">
+        function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>execQuery
+        <span class="apidocSignatureSpan">(sequelize, sql, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execQuery = function (sequelize, sql, options) {
+  if (sequelize.query.length === 2) {
+    return sequelize.query(sql, options);
+  } else {
+    return sequelize.query(sql, null, options);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.generic_helper.getEnvironment" id="apidoc.element.sequelize-cli.generic_helper.getEnvironment">
+        function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>getEnvironment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getEnvironment = function () {
+  return args.env || process.env.NODE_ENV || &#x27;development&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+
+    fs.writeFileSync(api.getConfigFile(), api.getDefaultConfig());
+  },
+
+  readConfig: function () {
+    if (!api.config) {
+var env = helpers.generic.<span class="apidocCodeKeywordSpan">getEnvironment</span>();
+
+if (api.rawConfig === undefined) {
+  throw new Error(
+    &#x27;Error reading &#x22;&#x27; +
+      api.relativeConfigFile() +
+      &#x27;&#x22;. Error: &#x27; + api.error
+  );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.generic_helper.getSequelize" id="apidoc.element.sequelize-cli.generic_helper.getSequelize">
+        function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>getSequelize
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSequelize = function (file) {
+  var sequelizePath;
+  var resolvePath = file ? path.join(&#x27;sequelize&#x27;, file) : &#x27;sequelize&#x27;;
+  var resolveOptions = { basedir: process.cwd() };
+
+  try {
+    sequelizePath = require.resolve(resolvePath, resolveOptions);
+  } catch (e) {
+  }
+
+  try {
+    sequelizePath = sequelizePath || resolve(resolvePath, resolveOptions);
+  } catch (e) {
+    console.error(&#x27;Unable to resolve sequelize package in &#x27; + process.cwd());
+    process.exit(1);
+  }
+
+  return require(sequelizePath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = {
+getCliVersion: function () {
+  return packageJson.version;
+},
+
+getOrmVersion: function () {
+  return helpers.generic.<span class="apidocCodeKeywordSpan">getSequelize</span>(&#x27;package.json&#x27;).version;
+},
+
+getDialect: function () {
+  try {
+    return helpers.config.readConfig();
+  } catch (e) {
+    return null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.generic_helper.mkdirp" id="apidoc.element.sequelize-cli.generic_helper.mkdirp">
+        function <span class="apidocSignatureSpan">sequelize-cli.generic_helper.</span>mkdirp
+        <span class="apidocSignatureSpan">(path, root)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mkdirp = function (path, root) {
+  var dirs = path.split(&#x27;/&#x27;);
+  var dir  = dirs.shift();
+
+  root = (root || &#x27;&#x27;) + dir + &#x27;/&#x27;;
+
+  try {
+    fs.mkdirSync(root);
+  } catch (e) {
+    // dir wasn&#x27;t made, something went wrong
+    if (!fs.statSync(root).isDirectory()) {
+      throw new Error(e);
+    }
+  }
+
+  return !dirs.length || this.mkdirp(dirs.join(&#x27;/&#x27;), root);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  } catch (e) {
+    // dir wasn&#x27;t made, something went wrong
+    if (!fs.statSync(root).isDirectory()) {
+      throw new Error(e);
+    }
+  }
+
+  return !dirs.length || this.<span class="apidocCodeKeywordSpan">mkdirp</span>(dirs.join(&#x27;/&#x27;), root);
+},
+
+getEnvironment: function () {
+  return args.env || process.env.NODE_ENV || &#x27;development&#x27;;
+},
+
+getSequelize: function (file) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.gulp_helper" id="apidoc.module.sequelize-cli.gulp_helper">module sequelize-cli.gulp_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.gulp_helper.addHelp" id="apidoc.element.sequelize-cli.gulp_helper.addHelp">
+        function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>addHelp
+        <span class="apidocSignatureSpan">(gulp, taskName, task)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addHelp = function (gulp, taskName, task) {
+  var self = this;
+
+  gulp.task(
+    &#x27;help:&#x27; + taskName,
+    false,
+    function () {
+      return config.then(function () {
+        Object.keys(task.descriptions).forEach(function (description) {
+          if (typeof task.descriptions[description] === &#x27;function&#x27;) {
+            task.descriptions[description] = task.descriptions[description]();
+          }
+        });
+        helpers.view.log(clc.bold(&#x27;COMMANDS&#x27;));
+
+        var commands      = [ taskName ].concat(task.aliases || []);
+        var commandMargin = Math.max.apply(null, commands.map(function (c) {
+          return c.length;
+        }));
+
+        commands.forEach(function (command) {
+          var s = [
+            &#x27;sequelize&#x27;, command + (new Array(commandMargin - command.length + 1).join(&#x27; &#x27;)),
+            &#x27;--&#x27;, task.descriptions.short
+          ].join(&#x27; &#x27;);
+
+          helpers.view.log(&#x27;    &#x27; + s);
+        });
+        helpers.view.log();
+
+        helpers.view.log(clc.bold(&#x27;DESCRIPTION&#x27;));
+
+        (task.descriptions.long || [task.descriptions.short]).forEach(function (line) {
+          helpers.view.log(&#x27;    &#x27; + line);
+        });
+
+        (function (options) {
+          if (options) {
+            var margin = Math.max.apply(null, Object.keys(options).map(function (o) {
+              return o.length;
+            }));
+
+            helpers.view.log();
+            helpers.view.log(clc.bold(&#x27;OPTIONS&#x27;));
+
+            Object.keys(options).forEach(function (option) {
+              var args = [&#x27;   &#x27;, option];
+
+              args.push(new Array(margin - option.length + 1).join(&#x27; &#x27;));
+              args.push(options[option]);
+
+              helpers.view.log.apply(helpers.view, args);
+            });
+          }
+        })(_.assign(self.getGlobalOptions(), task.descriptions.options));
+
+        helpers.view.log();
+      });
+    }
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.gulp_helper.addTask" id="apidoc.element.sequelize-cli.gulp_helper.addTask">
+        function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>addTask
+        <span class="apidocSignatureSpan">(gulp, taskName, task)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addTask = function (gulp, taskName, task) {
+  gulp.task(
+    taskName,
+    task.descriptions.short,
+    task.dependencies || [],
+    function () {
+      return config.then(function () {
+        return task.task();
+      });
+    }, {
+      aliases: task.aliases || []
+    }
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.gulp_helper.getGlobalOptions" id="apidoc.element.sequelize-cli.gulp_helper.getGlobalOptions">
+        function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>getGlobalOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getGlobalOptions = function () {
+  return {
+    &#x27;--env&#x27;: &#x27;The environment to run the command in. &#x27; +
+      clc.blueBright(&#x27;Default: development&#x27;),
+    &#x27;--coffee&#x27;: &#x27;Enables coffee script support. &#x27; +
+      clc.blueBright(&#x27;Default: false&#x27;),
+    &#x27;--config&#x27;: &#x27;The path to the config file. &#x27; +
+      clc.blueBright(&#x27;Default: config/config.json&#x27;),
+    &#x27;--options-path&#x27;: &#x27;The path to a JSON file with additional options. &#x27; +
+      clc.blueBright(&#x27;Default: none&#x27;),
+    &#x27;--migrations-path&#x27;: &#x27;The path to the migrations folder. &#x27; +
+      clc.blueBright(&#x27;Default: migrations&#x27;),
+    &#x27;--seeders-path&#x27;: &#x27;The path to the seeders folder. &#x27; +
+      clc.blueBright(&#x27;Default: seeders&#x27;),
+    &#x27;--models-path&#x27;: &#x27;The path to the models folder.&#x27; +
+      clc.blueBright(&#x27;Default: models&#x27;),
+    &#x27;--url&#x27;: &#x27;The database connection string to use. Alternative to using --config files. &#x27; +
+      clc.blueBright(&#x27;Default: none&#x27;)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+              args.push(new Array(margin - option.length + 1).join(&#x27; &#x27;));
+              args.push(options[option]);
+
+              helpers.view.log.apply(helpers.view, args);
+            });
+          }
+        })(_.assign(self.<span class="apidocCodeKeywordSpan">getGlobalOptions</span>(), task.descriptions.options));
+
+        helpers.view.log();
+      });
+    }
+  );
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.gulp_helper.printManuals" id="apidoc.element.sequelize-cli.gulp_helper.printManuals">
+        function <span class="apidocSignatureSpan">sequelize-cli.gulp_helper.</span>printManuals
+        <span class="apidocSignatureSpan">(tasks)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">printManuals = function (tasks) {
+  var manuals = Object.keys(tasks).filter(function (name) {
+    return name.indexOf(&#x27;help:&#x27;) === 0;
+  }).sort();
+  var margin  = manuals.reduce(function (m, taskName) {
+    return (m &#x3e; taskName.length) ? m : taskName.length;
+  }, 0);
+
+  console.log(&#x27;Available manuals&#x27;);
+
+  manuals.forEach(function (name) {
+    var args = [&#x27; &#x27;, name];
+
+    args.push(new Array(margin - name.length + 1).join(&#x27; &#x27;));
+    args.push(&#x27;The documentation for &#x22;sequelize &#x27; + name.replace(&#x27;help:&#x27;, &#x27;&#x27;) + &#x27;&#x22;.&#x27;);
+
+    console.log.apply(console, args);
+  });
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.init_helper" id="apidoc.module.sequelize-cli.init_helper">module sequelize-cli.init_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.createFolder" id="apidoc.element.sequelize-cli.init_helper.createFolder">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createFolder
+        <span class="apidocSignatureSpan">(folderName, folder, force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createFolder = function (folderName, folder, force) {
+  if (force) {
+    console.log(&#x27;Deleting the &#x27; + folderName + &#x27; folder. (--force)&#x27;);
+
+    try {
+      fs.readdirSync(folder).forEach(function (filename) {
+        fs.unlinkSync(path.resolve(folder, filename));
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    try {
+      fs.rmdirSync(folder);
+      console.log(&#x27;Successfully deleted the &#x27; + folderName + &#x27; folder.&#x27;);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  try {
+    helpers.generic.mkdirp(folder);
+    console.log(&#x27;Successfully created &#x27; + folderName + &#x27; folder at &#x22;&#x27; + folder + &#x27;&#x22;.&#x27;);
+  } catch (e) {
+    console.log(e);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    console.log(&#x27;Successfully created &#x27; + folderName + &#x27; folder at &#x22;&#x27; + folder + &#x27;&#x22;.&#x27;);
+  } catch (e) {
+    console.log(e);
+  }
+},
+
+createMigrationsFolder: function (force) {
+  this.<span class="apidocCodeKeywordSpan">createFolder</span>(&#x27;migrations&#x27;, helpers.path.getPath(&#x27;migration&#x27
+;), force);
+},
+
+createSeedersFolder: function (force) {
+  this.createFolder(&#x27;seeders&#x27;, helpers.path.getPath(&#x27;seeder&#x27;), force);
+},
+
+createModelsFolder: function (force) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.createMigrationsFolder" id="apidoc.element.sequelize-cli.init_helper.createMigrationsFolder">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createMigrationsFolder
+        <span class="apidocSignatureSpan">(force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createMigrationsFolder = function (force) {
+  this.createFolder(&#x27;migrations&#x27;, helpers.path.getPath(&#x27;migration&#x27;), force);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+&#x27;init:migrations&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the migrations.&#x27;
+  },
+
+  task: function () {
+    helpers.init.<span class="apidocCodeKeywordSpan">createMigrationsFolder</span>(!!args.force);
+  }
+},
+
+&#x27;init:seeders&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the seeders.&#x27;
+  },
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.createModelsFolder" id="apidoc.element.sequelize-cli.init_helper.createModelsFolder">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createModelsFolder
+        <span class="apidocSignatureSpan">(force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createModelsFolder = function (force) {
+  this.createFolder(&#x27;models&#x27;, helpers.path.getModelsPath(), force);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+&#x27;init:models&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the models.&#x27;
+  },
+
+  task: function () {
+    helpers.init.<span class="apidocCodeKeywordSpan">createModelsFolder</span>(!!args.force);
+    helpers.init.createModelsIndexFile(!!args.force);
+  }
+},
+
+&#x27;init:migrations&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the migrations.&#x27;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.createModelsIndexFile" id="apidoc.element.sequelize-cli.init_helper.createModelsIndexFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createModelsIndexFile
+        <span class="apidocSignatureSpan">(force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createModelsIndexFile = function (force) {
+  var modelsPath = helpers.path.getModelsPath();
+  var indexPath  = path.resolve(
+    modelsPath,
+    helpers.path.addFileExtension(&#x27;index&#x27;)
+  );
+
+  if (!helpers.path.existsSync(modelsPath)) {
+    helpers.view.log(&#x27;Models folder not available.&#x27;);
+  } else if (helpers.path.existsSync(indexPath) &#x26;&#x26; !force) {
+    this.notifyAboutExistingFile(indexPath);
+  } else {
+    var relativeConfigPath = path.relative(
+      helpers.path.getModelsPath(),
+      helpers.config.getConfigFile()
+    );
+
+    helpers.asset.write(
+      indexPath,
+      helpers.template.render(&#x27;models/index.js&#x27;, {
+        configFile: &#x27;__dirname + \&#x27;/&#x27; + relativeConfigPath + &#x27;\&#x27;&#x27;
+      }, {
+        beautify: false
+      })
+    );
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x27;init:models&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the models.&#x27;
+  },
+
+  task: function () {
+    helpers.init.createModelsFolder(!!args.force);
+    helpers.init.<span class="apidocCodeKeywordSpan">createModelsIndexFile</span>(!!args.force);
+  }
+},
+
+&#x27;init:migrations&#x27;: {
+  descriptions: {
+    &#x27;short&#x27;: &#x27;Initializes the migrations.&#x27;
+  },
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.createSeedersFolder" id="apidoc.element.sequelize-cli.init_helper.createSeedersFolder">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>createSeedersFolder
+        <span class="apidocSignatureSpan">(force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createSeedersFolder = function (force) {
+  this.createFolder(&#x27;seeders&#x27;, helpers.path.getPath(&#x27;seeder&#x27;), force);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  &#x27;init:seeders&#x27;: {
+    descriptions: {
+      &#x27;short&#x27;: &#x27;Initializes the seeders.&#x27;
+    },
+
+    task: function () {
+      helpers.init.<span class="apidocCodeKeywordSpan">createSeedersFolder</span>(!!args.force);
+    }
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.init_helper.notifyAboutExistingFile" id="apidoc.element.sequelize-cli.init_helper.notifyAboutExistingFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.init_helper.</span>notifyAboutExistingFile
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notifyAboutExistingFile = function (file) {
+  helpers.view.log(
+    &#x27;The file &#x27; + clc.blueBright(file) + &#x27; already exists. Run &#x27; +
+    &#x27;&#x22;sequelize init --force&#x22; to overwrite it.&#x27;
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+modelsPath,
+helpers.path.addFileExtension(&#x27;index&#x27;)
+    );
+
+    if (!helpers.path.existsSync(modelsPath)) {
+helpers.view.log(&#x27;Models folder not available.&#x27;);
+    } else if (helpers.path.existsSync(indexPath) &#x26;&#x26; !force) {
+this.<span class="apidocCodeKeywordSpan">notifyAboutExistingFile</span>(indexPath);
+    } else {
+var relativeConfigPath = path.relative(
+  helpers.path.getModelsPath(),
+  helpers.config.getConfigFile()
+);
+
+helpers.asset.write(
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.model_helper" id="apidoc.module.sequelize-cli.model_helper">module sequelize-cli.model_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.model_helper.generateFile" id="apidoc.element.sequelize-cli.model_helper.generateFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>generateFile
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateFile = function (args) {
+  var modelPath = helpers.path.getModelPath(args.name);
+
+  helpers.asset.write(modelPath, this.generateFileContent(args));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    ],
+
+    task: function () {
+      this.preChecks.forEach(function (preCheck) {
+        preCheck();
+      });
+
+      helpers.model.<span class="apidocCodeKeywordSpan">generateFile</span>(args);
+      helpers.migration.generateTableCreationFile(args);
+    }
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.model_helper.generateFileContent" id="apidoc.element.sequelize-cli.model_helper.generateFileContent">
+        function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>generateFileContent
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateFileContent = function (args) {
+  return helpers.template.render(&#x27;models/model.js&#x27;, {
+    name:       args.name,
+    attributes: this.transformAttributes(args.attributes),
+    underscored: args.underscored
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      underscored: args.underscored
+    });
+  },
+
+  generateFile: function (args) {
+    var modelPath = helpers.path.getModelPath(args.name);
+
+    helpers.asset.write(modelPath, this.<span class="apidocCodeKeywordSpan">generateFileContent</span>(args));
+  },
+
+  modelFileExists: function (filePath) {
+    return helpers.path.existsSync(filePath);
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.model_helper.modelFileExists" id="apidoc.element.sequelize-cli.model_helper.modelFileExists">
+        function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>modelFileExists
+        <span class="apidocSignatureSpan">(filePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">modelFileExists = function (filePath) {
+  return helpers.path.existsSync(filePath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      process.exit(1);
+    }
+  },
+
+  function checkModelFileExistence () {
+    var modelPath = helpers.path.getModelPath(args.name);
+
+    if (!args.force &#x26;&#x26; helpers.model.<span class="apidocCodeKeywordSpan">modelFileExists</span>(modelPath)) {
+      helpers.model.notifyAboutExistingFile(modelPath);
+      process.exit(1);
+    }
+  }
+],
+
+task: function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.model_helper.notifyAboutExistingFile" id="apidoc.element.sequelize-cli.model_helper.notifyAboutExistingFile">
+        function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>notifyAboutExistingFile
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notifyAboutExistingFile = function (file) {
+  helpers.view.error(
+    &#x27;The file &#x27; + clc.blueBright(file) + &#x27; already exists. &#x27; +
+    &#x27;Run &#x22;sequelize model:create --force&#x22; to overwrite it.&#x27;
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+modelsPath,
+helpers.path.addFileExtension(&#x27;index&#x27;)
+    );
+
+    if (!helpers.path.existsSync(modelsPath)) {
+helpers.view.log(&#x27;Models folder not available.&#x27;);
+    } else if (helpers.path.existsSync(indexPath) &#x26;&#x26; !force) {
+this.<span class="apidocCodeKeywordSpan">notifyAboutExistingFile</span>(indexPath);
+    } else {
+var relativeConfigPath = path.relative(
+  helpers.path.getModelsPath(),
+  helpers.config.getConfigFile()
+);
+
+helpers.asset.write(
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.model_helper.transformAttributes" id="apidoc.element.sequelize-cli.model_helper.transformAttributes">
+        function <span class="apidocSignatureSpan">sequelize-cli.model_helper.</span>transformAttributes
+        <span class="apidocSignatureSpan">(flag)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transformAttributes = function (flag) {
+<span class="apidocCodeCommentSpan">  /*
+    possible flag formats:
+    - first_name:string,last_name:string,bio:text
+    - &#x27;first_name:string last_name:string bio:text&#x27;
+    - &#x27;first_name:string, last_name:string, bio:text&#x27;
+  */
+</span>
+  var set    = flag.replace(/,/g, &#x27; &#x27;).split(/\s+/);
+  var result = {};
+
+  set.forEach(function (pair) {
+    var split = pair.split(&#x27;:&#x27;);
+
+    result[split[0]] = split[1];
+  });
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return result;
+},
+
+generateFileContent: function (args) {
+  return helpers.template.render(&#x27;models/model.js&#x27;, {
+    name:       args.name,
+    attributes: this.<span class="apidocCodeKeywordSpan">transformAttributes</span>(args.attributes),
+    underscored: args.underscored
+  });
+},
+
+generateFile: function (args) {
+  var modelPath = helpers.path.getModelPath(args.name);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.path_helper" id="apidoc.module.sequelize-cli.path_helper">module sequelize-cli.path_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.addFileExtension" id="apidoc.element.sequelize-cli.path_helper.addFileExtension">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>addFileExtension
+        <span class="apidocSignatureSpan">(basename, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addFileExtension = function (basename, options) {
+  return [basename, this.getFileExtension(options)].join(&#x27;.&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.createFolder(&#x27;models&#x27;, helpers.path.getModelsPath(), force);
+  },
+
+  createModelsIndexFile: function (force) {
+var modelsPath = helpers.path.getModelsPath();
+var indexPath  = path.resolve(
+  modelsPath,
+  helpers.path.<span class="apidocCodeKeywordSpan">addFileExtension</span>(&#x27;index&#x27;)
+);
+
+if (!helpers.path.existsSync(modelsPath)) {
+  helpers.view.log(&#x27;Models folder not available.&#x27;);
+} else if (helpers.path.existsSync(indexPath) &#x26;&#x26; !force) {
+  this.notifyAboutExistingFile(indexPath);
+} else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.existsSync" id="apidoc.element.sequelize-cli.path_helper.existsSync">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>existsSync
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">existsSync = function (path) {
+  if (fs.accessSync) {
+    try {
+      fs.accessSync(path, fs.R_OK);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  } else {
+    return fs.existsSync(path);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (args.config) {
+    return path.resolve(process.cwd(), args.config);
+  }
+
+  var defaultPath = path.resolve(process.cwd(), &#x27;config&#x27;, &#x27;config.json&#x27;);
+  var alternativePath = defaultPath.replace(&#x27;.json&#x27;, &#x27;.js&#x27;);
+
+  return helpers.path.<span class="apidocCodeKeywordSpan">existsSync</span>(alternativePath) ? alternativePath : defaultPath;
+},
+
+relativeConfigFile: function () {
+  return path.relative(process.cwd(), api.getConfigFile());
+},
+
+configFileExists: function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getFileExtension" id="apidoc.element.sequelize-cli.path_helper.getFileExtension">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getFileExtension
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFileExtension = function (options) {
+  return helpers.config.supportsCoffee(options) ? &#x27;coffee&#x27; : &#x27;js&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+getFileExtension: function (options) {
+  return helpers.config.supportsCoffee(options) ? &#x27;coffee&#x27; : &#x27;js&#x27;;
+},
+
+addFileExtension: function (basename, options) {
+  return [basename, this.<span class="apidocCodeKeywordSpan">getFileExtension</span>(options)].join(&#x27;.&#x27;);
+},
+
+getMigrationPath: function (migrationName) {
+  return path.resolve(this.getPath(&#x27;migration&#x27;), this.getFileName(&#x27;migration&#x27;, migrationName));
+},
+
+getSeederPath: function (seederName) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getFileName" id="apidoc.element.sequelize-cli.path_helper.getFileName">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getFileName
+        <span class="apidocSignatureSpan">(type, name, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFileName = function (type, name, options) {
+  return this.addFileExtension(
+    [
+      moment().utc().format(&#x27;YYYYMMDDHHmmss&#x27;),
+      !!name ? name : &#x27;unnamed-&#x27; + type
+    ].join(&#x27;-&#x27;),
+    options
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+addFileExtension: function (basename, options) {
+  return [basename, this.getFileExtension(options)].join(&#x27;.&#x27;);
+},
+
+getMigrationPath: function (migrationName) {
+  return path.resolve(this.getPath(&#x27;migration&#x27;), this.<span class="apidocCodeKeywordSpan">getFileName</span>(&#x27;migration
+&#x27;, migrationName));
+},
+
+getSeederPath: function (seederName) {
+  return path.resolve(this.getPath(&#x27;seeder&#x27;), this.getFileName(&#x27;seeder&#x27;, seederName));
+},
+
+getModelsPath: function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getMigrationPath" id="apidoc.element.sequelize-cli.path_helper.getMigrationPath">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getMigrationPath
+        <span class="apidocSignatureSpan">(migrationName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getMigrationPath = function (migrationName) {
+  return path.resolve(this.getPath(&#x27;migration&#x27;), this.getFileName(&#x27;migration&#x27;, migrationName));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  config = helpers.config.readConfig();
+} catch (e) {
+  console.log(e.message);
+  process.exit(1);
+}
+
+fs.writeFileSync(
+  helpers.path.<span class="apidocCodeKeywordSpan">getMigrationPath</span>(args.name),
+  helpers.template.render(&#x27;migrations/skeleton.js&#x27;, {}, {
+    beautify: false
+  })
+);
+
+helpers.view.log(
+  &#x27;New migration was created at&#x27;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getModelPath" id="apidoc.element.sequelize-cli.path_helper.getModelPath">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getModelPath
+        <span class="apidocSignatureSpan">(modelName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getModelPath = function (modelName) {
+  return path.resolve(
+    this.getModelsPath(),
+    this.addFileExtension(modelName.toLowerCase())
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    name:       args.name,
+    attributes: this.transformAttributes(args.attributes),
+    underscored: args.underscored
+  });
+},
+
+generateFile: function (args) {
+  var modelPath = helpers.path.<span class="apidocCodeKeywordSpan">getModelPath</span>(args.name);
+
+  helpers.asset.write(modelPath, this.generateFileContent(args));
+},
+
+modelFileExists: function (filePath) {
+  return helpers.path.existsSync(filePath);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getModelsPath" id="apidoc.element.sequelize-cli.path_helper.getModelsPath">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getModelsPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getModelsPath = function () {
+  return args.modelsPath || path.resolve(process.cwd(), &#x27;models&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+createSeedersFolder: function (force) {
+  this.createFolder(&#x27;seeders&#x27;, helpers.path.getPath(&#x27;seeder&#x27;), force);
+},
+
+createModelsFolder: function (force) {
+  this.createFolder(&#x27;models&#x27;, helpers.path.<span class="apidocCodeKeywordSpan">getModelsPath</span>(), force);
+},
+
+createModelsIndexFile: function (force) {
+  var modelsPath = helpers.path.getModelsPath();
+  var indexPath  = path.resolve(
+    modelsPath,
+    helpers.path.addFileExtension(&#x27;index&#x27;)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getPath" id="apidoc.element.sequelize-cli.path_helper.getPath">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getPath
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPath = function (type) {
+  type = type + &#x27;s&#x27;;
+
+  var result = args[type + &#x27;Path&#x27;] || path.resolve(process.cwd(), type);
+
+  if (path.normalize(result) !== path.resolve(result)) {
+    // the path is relative
+    result = path.resolve(process.cwd(), result);
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    console.log(&#x27;Successfully created &#x27; + folderName + &#x27; folder at &#x22;&#x27; + folder + &#x27;&#x22;.&#x27;);
+  } catch (e) {
+    console.log(e);
+  }
+},
+
+createMigrationsFolder: function (force) {
+  this.createFolder(&#x27;migrations&#x27;, helpers.path.<span class="apidocCodeKeywordSpan">getPath</span>(&#x27;migration&#x27
+;), force);
+},
+
+createSeedersFolder: function (force) {
+  this.createFolder(&#x27;seeders&#x27;, helpers.path.getPath(&#x27;seeder&#x27;), force);
+},
+
+createModelsFolder: function (force) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.getSeederPath" id="apidoc.element.sequelize-cli.path_helper.getSeederPath">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>getSeederPath
+        <span class="apidocSignatureSpan">(seederName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSeederPath = function (seederName) {
+  return path.resolve(this.getPath(&#x27;seeder&#x27;), this.getFileName(&#x27;seeder&#x27;, seederName));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  config = helpers.config.readConfig();
+} catch (e) {
+  console.log(e.message);
+  process.exit(1);
+}
+
+fs.writeFileSync(
+  helpers.path.<span class="apidocCodeKeywordSpan">getSeederPath</span>(args.name),
+  helpers.template.render(&#x27;seeders/skeleton.js&#x27;, {}, {
+    beautify: false
+  })
+);
+
+helpers.view.log(
+  &#x27;New seed was created at&#x27;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.path_helper.resolve" id="apidoc.element.sequelize-cli.path_helper.resolve">
+        function <span class="apidocSignatureSpan">sequelize-cli.path_helper.</span>resolve
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resolve = function (packageName) {
+  var result;
+
+  try {
+    result = resolve(packageName, { basedir: process.cwd() });
+    result = require(result);
+  } catch (e) {
+    try {
+      result = require(packageName);
+    } catch (e) {}
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Example for a Node.JS script
+
+```javascript
+var path = require(&#x27;path&#x27;)
+
+module.exports = {
+  &#x27;config&#x27;:          path.<span class="apidocCodeKeywordSpan">resolve</span>(&#x27;config&#x27;, &#x27;database.json&#
+x27;),
+  &#x27;migrations-path&#x27;: path.resolve(&#x27;db&#x27;, &#x27;migrate&#x27;)
+}
+```
+
+This will configure the CLI to always treat `config/database.json` as config file and
+`db/migrate` as the directory for migrations.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.template_helper" id="apidoc.module.sequelize-cli.template_helper">module sequelize-cli.template_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.template_helper.getCoffeeConverter" id="apidoc.element.sequelize-cli.template_helper.getCoffeeConverter">
+        function <span class="apidocSignatureSpan">sequelize-cli.template_helper.</span>getCoffeeConverter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCoffeeConverter = function () {
+  return helpers.path.resolve(&#x27;js2coffee&#x27;) || (function () {
+    console.log(&#x27;Unable to find \&#x27;js2coffee\&#x27;. Please add it to your project.&#x27;);
+    process.exit(1);
+  })();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var content  = _.template(template)(locals || {});
+
+    if (options.beautify) {
+      content = beautify(content, options);
+    }
+
+    if (helpers.config.supportsCoffee()) {
+      content = this.<span class="apidocCodeKeywordSpan">getCoffeeConverter</span>().build(content);
+      content = content.code || content;
+    }
+
+    return content;
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.template_helper.render" id="apidoc.element.sequelize-cli.template_helper.render">
+        function <span class="apidocSignatureSpan">sequelize-cli.template_helper.</span>render
+        <span class="apidocSignatureSpan">(path, locals, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (path, locals, options) {
+  options = _.assign({
+    beautify: true,
+    indent_size: 2,
+    preserve_newlines: false
+  }, options || {});
+
+  var template = helpers.asset.read(path);
+  var content  = _.template(template)(locals || {});
+
+  if (options.beautify) {
+    content = beautify(content, options);
+  }
+
+  if (helpers.config.supportsCoffee()) {
+    content = this.getCoffeeConverter().build(content);
+    content = content.code || content;
+  }
+
+  return content;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var relativeConfigPath = path.relative(
+      helpers.path.getModelsPath(),
+      helpers.config.getConfigFile()
+    );
+
+    helpers.asset.write(
+      indexPath,
+      helpers.template.<span class="apidocCodeKeywordSpan">render</span>(&#x27;models/index.js&#x27;, {
+        configFile: &#x27;__dirname + \&#x27;/&#x27; + relativeConfigPath + &#x27;\&#x27;&#x27;
+      }, {
+        beautify: false
+      })
+    );
+  }
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.umzug_helper" id="apidoc.module.sequelize-cli.umzug_helper">module sequelize-cli.umzug_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.umzug_helper.getStorage" id="apidoc.element.sequelize-cli.umzug_helper.getStorage">
+        function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorage
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStorage = function (type) {
+  return this.getStorageOption(type + &#x27;Storage&#x27;, storage[type]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  getTableName: function (type) {
+return this.getStorageOption(type + &#x27;StorageTableName&#x27;, storageTableName[type]);
+  },
+
+  getStorageOptions: function (type, extraOptions) {
+var options = {};
+
+if (this.<span class="apidocCodeKeywordSpan">getStorage</span>(type) === &#x27;json&#x27;) {
+  options.path = this.getStoragePath(type);
+} else if (this.getStorage(type) === &#x27;sequelize&#x27;) {
+  options.tableName = this.getTableName(type);
+}
+
+_.assign(options, extraOptions);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.umzug_helper.getStorageOption" id="apidoc.element.sequelize-cli.umzug_helper.getStorageOption">
+        function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorageOption
+        <span class="apidocSignatureSpan">(property, fallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStorageOption = function (property, fallback) {
+  return helpers.config.readConfig()[property] || fallback;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = {
+getStorageOption: function (property, fallback) {
+  return helpers.config.readConfig()[property] || fallback;
+},
+
+getStorage: function (type) {
+  return this.<span class="apidocCodeKeywordSpan">getStorageOption</span>(type + &#x27;Storage&#x27;, storage[type]);
+},
+
+getStoragePath: function (type) {
+  var fallbackPath = path.join(process.cwd(), storageJsonName[type]);
+
+  return this.getStorageOption(type + &#x27;StoragePath&#x27;, fallbackPath);
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.umzug_helper.getStorageOptions" id="apidoc.element.sequelize-cli.umzug_helper.getStorageOptions">
+        function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStorageOptions
+        <span class="apidocSignatureSpan">(type, extraOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStorageOptions = function (type, extraOptions) {
+  var options = {};
+
+  if (this.getStorage(type) === &#x27;json&#x27;) {
+    options.path = this.getStoragePath(type);
+  } else if (this.getStorage(type) === &#x27;sequelize&#x27;) {
+    options.tableName = this.getTableName(type);
+  }
+
+  _.assign(options, extraOptions);
+
+  return options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.umzug_helper.getStoragePath" id="apidoc.element.sequelize-cli.umzug_helper.getStoragePath">
+        function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getStoragePath
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStoragePath = function (type) {
+  var fallbackPath = path.join(process.cwd(), storageJsonName[type]);
+
+  return this.getStorageOption(type + &#x27;StoragePath&#x27;, fallbackPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return this.getStorageOption(type + &#x27;StorageTableName&#x27;, storageTableName[type]);
+  },
+
+  getStorageOptions: function (type, extraOptions) {
+var options = {};
+
+if (this.getStorage(type) === &#x27;json&#x27;) {
+  options.path = this.<span class="apidocCodeKeywordSpan">getStoragePath</span>(type);
+} else if (this.getStorage(type) === &#x27;sequelize&#x27;) {
+  options.tableName = this.getTableName(type);
+}
+
+_.assign(options, extraOptions);
+
+return options;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.umzug_helper.getTableName" id="apidoc.element.sequelize-cli.umzug_helper.getTableName">
+        function <span class="apidocSignatureSpan">sequelize-cli.umzug_helper.</span>getTableName
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTableName = function (type) {
+  return this.getStorageOption(type + &#x27;StorageTableName&#x27;, storageTableName[type]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  getStorageOptions: function (type, extraOptions) {
+    var options = {};
+
+    if (this.getStorage(type) === &#x27;json&#x27;) {
+      options.path = this.getStoragePath(type);
+    } else if (this.getStorage(type) === &#x27;sequelize&#x27;) {
+      options.tableName = this.<span class="apidocCodeKeywordSpan">getTableName</span>(type);
+    }
+
+    _.assign(options, extraOptions);
+
+    return options;
+  }
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.version_helper" id="apidoc.module.sequelize-cli.version_helper">module sequelize-cli.version_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getCliVersion" id="apidoc.element.sequelize-cli.version_helper.getCliVersion">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getCliVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCliVersion = function () {
+  return packageJson.version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var clc     = require(&#x27;cli-color&#x27;);
+var _       = require(&#x27;lodash&#x27;);
+
+module.exports = {
+  teaser: function () {
+var versions = [
+  &#x27;Node: &#x27; + helpers.version.getNodeVersion(),
+  &#x27;CLI: &#x27;  + helpers.version.<span class="apidocCodeKeywordSpan">getCliVersion</span>(),
+  &#x27;ORM: &#x27;  + helpers.version.getOrmVersion()
+];
+
+if (helpers.version.getDialectName() &#x26;&#x26; helpers.version.getDialectVersion()) {
+  versions.push(
+    helpers.version.getDialectName() +
+    &#x27;: &#x27; +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getDialect" id="apidoc.element.sequelize-cli.version_helper.getDialect">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDialect = function () {
+  try {
+    return helpers.config.readConfig();
+  } catch (e) {
+    return null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} catch (e) {
+}
+
+return null;
+  },
+
+  getDialectName: function () {
+var config = this.<span class="apidocCodeKeywordSpan">getDialect</span>();
+
+if (config) {
+  return {
+    &#x27;sqlite&#x27;:   &#x27;sqlite3&#x27;,
+    &#x27;postgres&#x27;: &#x27;pg&#x27;,
+    &#x27;mariadb&#x27;:  &#x27;mariasql&#x27;,
+    &#x27;mysql&#x27;:    &#x27;mysql&#x27;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getDialectName" id="apidoc.element.sequelize-cli.version_helper.getDialectName">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialectName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDialectName = function () {
+  var config = this.getDialect();
+
+  if (config) {
+    return {
+      &#x27;sqlite&#x27;:   &#x27;sqlite3&#x27;,
+      &#x27;postgres&#x27;: &#x27;pg&#x27;,
+      &#x27;mariadb&#x27;:  &#x27;mariasql&#x27;,
+      &#x27;mysql&#x27;:    &#x27;mysql&#x27;
+    }[config.dialect];
+  } else {
+    return null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return helpers.config.readConfig();
+} catch (e) {
+  return null;
+}
+  },
+
+  getDialectVersion: function () {
+var adapterName = this.<span class="apidocCodeKeywordSpan">getDialectName</span>();
+
+try {
+  if (adapterName) {
+    return require(
+      findup(&#x27;package.json&#x27;)
+    ).dependencies[adapterName];
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getDialectVersion" id="apidoc.element.sequelize-cli.version_helper.getDialectVersion">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getDialectVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDialectVersion = function () {
+  var adapterName = this.getDialectName();
+
+  try {
+    if (adapterName) {
+      return require(
+        findup(&#x27;package.json&#x27;)
+      ).dependencies[adapterName];
+    }
+  } catch (e) {
+  }
+
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  teaser: function () {
+var versions = [
+  &#x27;Node: &#x27; + helpers.version.getNodeVersion(),
+  &#x27;CLI: &#x27;  + helpers.version.getCliVersion(),
+  &#x27;ORM: &#x27;  + helpers.version.getOrmVersion()
+];
+
+if (helpers.version.getDialectName() &#x26;&#x26; helpers.version.<span class="apidocCodeKeywordSpan">getDialectVersion</span>()) {
+  versions.push(
+    helpers.version.getDialectName() +
+    &#x27;: &#x27; +
+    helpers.version.getDialectVersion()
+  );
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getNodeVersion" id="apidoc.element.sequelize-cli.version_helper.getNodeVersion">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getNodeVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getNodeVersion = function () {
+  return process.version.replace(&#x27;v&#x27;, &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var helpers = require(__dirname);
+var clc     = require(&#x27;cli-color&#x27;);
+var _       = require(&#x27;lodash&#x27;);
+
+module.exports = {
+  teaser: function () {
+var versions = [
+  &#x27;Node: &#x27; + helpers.version.<span class="apidocCodeKeywordSpan">getNodeVersion</span>(),
+  &#x27;CLI: &#x27;  + helpers.version.getCliVersion(),
+  &#x27;ORM: &#x27;  + helpers.version.getOrmVersion()
+];
+
+if (helpers.version.getDialectName() &#x26;&#x26; helpers.version.getDialectVersion()) {
+  versions.push(
+    helpers.version.getDialectName() +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.version_helper.getOrmVersion" id="apidoc.element.sequelize-cli.version_helper.getOrmVersion">
+        function <span class="apidocSignatureSpan">sequelize-cli.version_helper.</span>getOrmVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOrmVersion = function () {
+  return helpers.generic.getSequelize(&#x27;package.json&#x27;).version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _       = require(&#x27;lodash&#x27;);
+
+module.exports = {
+  teaser: function () {
+var versions = [
+  &#x27;Node: &#x27; + helpers.version.getNodeVersion(),
+  &#x27;CLI: &#x27;  + helpers.version.getCliVersion(),
+  &#x27;ORM: &#x27;  + helpers.version.<span class="apidocCodeKeywordSpan">getOrmVersion</span>()
+];
+
+if (helpers.version.getDialectName() &#x26;&#x26; helpers.version.getDialectVersion()) {
+  versions.push(
+    helpers.version.getDialectName() +
+    &#x27;: &#x27; +
+    helpers.version.getDialectVersion()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-cli.view_helper" id="apidoc.module.sequelize-cli.view_helper">module sequelize-cli.view_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.view_helper.error" id="apidoc.element.sequelize-cli.view_helper.error">
+        function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>error
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    sequelizePath = require.resolve(resolvePath, resolveOptions);
+  } catch (e) {
+  }
+
+  try {
+    sequelizePath = sequelizePath || resolve(resolvePath, resolveOptions);
+  } catch (e) {
+    console.<span class="apidocCodeKeywordSpan">error</span>(&#x27;Unable to resolve sequelize package in &#x27; + process.cwd());
+    process.exit(1);
+  }
+
+  return require(sequelizePath);
+},
+
+execQuery: function (sequelize, sql, options) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.view_helper.log" id="apidoc.element.sequelize-cli.view_helper.log">
+        function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>log
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  throw new Error(
+    &#x27;Config must be an object or a promise for an object: &#x27; +
+      api.relativeConfigFile()
+  );
+}
+
+if (args.url) {
+  console.<span class="apidocCodeKeywordSpan">log</span>(&#x27;Parsed url &#x27; + api.filteredUrl(args.url, api.rawConfig));
+} else {
+  console.log(&#x27;Loaded configuration file &#x22;&#x27; + api.relativeConfigFile() + &#x27;&#x22;.&#x27;);
+}
+
+if (api.rawConfig[env]) {
+  console.log(&#x27;Using environment &#x22;&#x27; + env + &#x27;&#x22;.&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.view_helper.pad" id="apidoc.element.sequelize-cli.view_helper.pad">
+        function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>pad
+        <span class="apidocSignatureSpan">(s, smth)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pad = function (s, smth) {
+  var margin = smth;
+
+  if (_.isObject(margin)) {
+    margin = Object.keys(margin);
+  }
+
+  if (Array.isArray(margin)) {
+    margin = Math.max.apply(null, margin.map(function (o) {
+      return o.length;
+    }));
+  }
+
+  return s + new Array(margin - s.length + 1).join(&#x27; &#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  &#x27;seeders&#x27;: &#x27;A folder that contains the seed files.&#x27;,
+  &#x27;models&#x27;: &#x27;A folder that contains the model files.&#x27;,
+  &#x27;models/index.js&#x27;: &#x27;A file that can be required to load all the models.&#x27;
+};
+
+_.forEach(items, function (value, key) {
+  result.push([
+    clc.blueBright(helpers.view.<span class="apidocCodeKeywordSpan">pad</span>(key, items)),
+    value
+  ].join(&#x27; &#x27;));
+});
+
+result = result.concat([
+  &#x27;&#x27;,
+  &#x27;Most of the files and folders can be changed to fit custom folder structures.&#x27;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-cli.view_helper.teaser" id="apidoc.element.sequelize-cli.view_helper.teaser">
+        function <span class="apidocSignatureSpan">sequelize-cli.view_helper.</span>teaser
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">teaser = function () {
+  var versions = [
+    &#x27;Node: &#x27; + helpers.version.getNodeVersion(),
+    &#x27;CLI: &#x27;  + helpers.version.getCliVersion(),
+    &#x27;ORM: &#x27;  + helpers.version.getOrmVersion()
+  ];
+
+  if (helpers.version.getDialectName() &#x26;&#x26; helpers.version.getDialectVersion()) {
+    versions.push(
+      helpers.version.getDialectName() +
+      &#x27;: &#x27; +
+      helpers.version.getDialectVersion()
+    );
+  }
+
+  this.log();
+  this.log(clc.underline(&#x27;Sequelize [&#x27; + versions.join(&#x27;, &#x27;) + &#x27;]&#x27;));
+  this.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
